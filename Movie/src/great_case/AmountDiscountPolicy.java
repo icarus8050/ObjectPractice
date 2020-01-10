@@ -1,3 +1,5 @@
+package great_case;
+
 public class AmountDiscountPolicy extends DiscountPolicy {
     private Money discountAmount;
 

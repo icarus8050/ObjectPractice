@@ -1,3 +1,5 @@
+package great_case;
+
 public class PercentDiscountPolicy extends DiscountPolicy {
     private double percent;
 

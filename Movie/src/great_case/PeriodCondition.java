@@ -1,3 +1,5 @@
+package great_case;
+
 import java.time.DayOfWeek;
 import java.time.LocalTime;
 

@@ -1,3 +1,5 @@
+package great_case;
+
 import java.math.BigDecimal;
 
 public class Money {

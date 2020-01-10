@@ -1,3 +1,5 @@
+package great_case;
+
 import java.time.Duration;
 
 public class Movie {

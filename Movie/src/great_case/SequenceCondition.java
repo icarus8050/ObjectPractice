@@ -1,3 +1,5 @@
+package great_case;
+
 public class SequenceCondition implements DiscountCondition {
     private int sequence;
 
