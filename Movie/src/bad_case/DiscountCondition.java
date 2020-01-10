@@ -2,6 +2,7 @@ package bad_case;
 
 import java.time.DayOfWeek;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 
 public class DiscountCondition {
     private DiscountConditionType type;
@@ -9,8 +10,8 @@ public class DiscountCondition {
     private int sequence;
 
     private DayOfWeek dayOfWeek;
-    private LocalDateTime startTime;
-    private LocalDateTime endTime;
+    private LocalTime startTime;
+    private LocalTime endTime;
 
     public DiscountConditionType getType() {
         return type;
@@ -36,19 +37,19 @@ public class DiscountCondition {
         this.dayOfWeek = dayOfWeek;
     }
 
-    public LocalDateTime getStartTime() {
+    public LocalTime getStartTime() {
         return startTime;
     }
 
-    public void setStartTime(LocalDateTime startTime) {
+    public void setStartTime(LocalTime startTime) {
         this.startTime = startTime;
     }
 
-    public LocalDateTime getEndTime() {
+    public LocalTime getEndTime() {
         return endTime;
     }
 
-    public void setEndTime(LocalDateTime endTime) {
+    public void setEndTime(LocalTime endTime) {
         this.endTime = endTime;
     }
 }
