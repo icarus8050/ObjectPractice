@@ -12,6 +12,10 @@ public class DiscountCondition {
     private LocalTime startTime;
     private LocalTime endTime;
 
+    public DiscountConditionType getType() {
+        return type;
+    }
+
     public boolean isDiscountable(DayOfWeek dayOfWeek, LocalTime time) {
         if (type != DiscountConditionType.PERIOD) {
             throw new IllegalArgumentException();

@@ -15,6 +15,10 @@ public class Movie {
     private Money discountAmount;
     private double discountPercent;
 
+    public MovieType getMovieType() {
+        return movieType;
+    }
+
     public Money calculateAmountDiscountedFee() {
         if (movieType != MovieType.AMOUNT_DISCOUNT) {
             throw new IllegalArgumentException();
