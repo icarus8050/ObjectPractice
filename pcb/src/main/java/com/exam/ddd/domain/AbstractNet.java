@@ -9,7 +9,7 @@ public abstract class AbstractNet {
 
     public AbstractNet(String name) {
         this.name = name;
-        this.rules = new HashSet<LayoutRule>();
+        this.rules = new HashSet<>();
     }
 
     public void assignRule(LayoutRule rule) {

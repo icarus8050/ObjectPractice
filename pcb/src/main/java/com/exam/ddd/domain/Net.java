@@ -18,4 +18,16 @@ public class Net extends AbstractNet {
         result.addAll(bus.assignedRules());
         return result;
     }
+
+    public LayoutRule getRule(String layoutRule) {
+        Set<LayoutRule> layoutRules = assignedRules();
+        return layoutRules.stream()
+                .filter(r -> r.getType().equals(layoutRule))
+                .findFirst()
+                .orElse(null);
+    }
+
+    public void assignBus(Bus bus) {
+        this.bus = bus;
+    }
 }

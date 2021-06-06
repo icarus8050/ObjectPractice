@@ -1,24 +1,23 @@
 package com.exam.ddd.domain;
 
 public class NetRule implements LayoutRule {
-
     private String type;
-    private Long parameter;
+    private Integer parameter;
 
-    private NetRule(String type, Long parameter) {
+    private NetRule(String type, Integer parameter) {
         this.type = type;
         this.parameter = parameter;
     }
 
-    public static NetRule create(String type, Long parameter) {
+    public static NetRule create(String type, Integer parameter) {
         return new NetRule(type, parameter);
     }
 
     public String getType() {
-        return null;
+        return type;
     }
 
-    public Long getParameter() {
-        return null;
+    public Integer getParameter() {
+        return parameter;
     }
 }
