@@ -9,9 +9,9 @@ class PaintTest {
     @Test
     void testPaint_1() {
         // 용량이 100인 순수한 노란색 페인트를 생성한다.
-        Paint yellow = new Paint(100.0, 0, 50, 0);
+        Paint yellow = new Paint(100.0, new PigmentColor(0, 50, 0));
         // 용량이 100인 순수한 파란색 페인트를 생성한다.
-        Paint blue = new Paint(100.0, 0, 0, 50);
+        Paint blue = new Paint(100.0, new PigmentColor(0, 0, 50));
 
         // 노란색 페인트에 파란색 페인트를 혼합한다.
         yellow.mixIn(blue);
@@ -26,9 +26,9 @@ class PaintTest {
     @Test
     void testPaint_2() {
         // 용량이 100인 순수한 노란색 페인트를 생성한다.
-        Paint ourPaint = new Paint(100.0, 0, 50, 0);
+        Paint ourPaint = new Paint(100.0, new PigmentColor(0, 50, 0));
         // 용량이 100인 순수한 파란색 페인트를 생성한다.
-        Paint blue = new Paint(100.0, 0, 0, 50);
+        Paint blue = new Paint(100.0, new PigmentColor(0, 0, 50));
 
         // 노란색 페인트에 파란색 페인트를 혼합한다.
         ourPaint.mixIn(blue);

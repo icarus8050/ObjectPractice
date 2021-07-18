@@ -2,22 +2,17 @@ package com.exam.paint;
 
 public class Paint {
     private double volume;
-    private int red;
-    private int yellow;
-    private int blue;
+    private PigmentColor pigmentColor;
 
-    public Paint(double volume, int red, int yellow, int blue) {
+    public Paint(double volume, PigmentColor pigmentColor) {
         this.volume = volume;
-        this.red = red;
-        this.yellow = yellow;
-        this.blue = blue;
+        this.pigmentColor = pigmentColor;
     }
 
-    public void mixIn(Paint paint) {
-        volume = volume + paint.getVolume();
-        red = (int) ((red + paint.red) / volume * 100);
-        yellow = (int) ((yellow + paint.yellow) / volume * 100);
-        blue = (int) ((blue + paint.blue) / volume * 100);
+    public void mixIn(Paint other) {
+        volume = volume + other.getVolume();
+        double ratio = other.getVolume() / volume;
+        pigmentColor = pigmentColor.mixedWith(other.pigmentColor, ratio);
     }
 
     public double getVolume() {
@@ -25,14 +20,14 @@ public class Paint {
     }
 
     public int getRed() {
-        return red;
+        return pigmentColor.getRed();
     }
 
     public int getYellow() {
-        return yellow;
+        return pigmentColor.getYellow();
     }
 
     public int getBlue() {
-        return blue;
+        return pigmentColor.getBlue();
     }
 }
