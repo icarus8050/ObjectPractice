@@ -1,6 +1,6 @@
-package com.exam.ddd.repository;
+package com.exam.pcb.repository;
 
-import com.exam.ddd.domain.Bus;
+import com.exam.pcb.domain.Bus;
 
 public interface BusRepository {
     Bus findById(Long id);

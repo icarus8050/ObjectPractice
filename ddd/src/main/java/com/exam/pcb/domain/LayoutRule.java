@@ -1,4 +1,4 @@
-package com.exam.ddd.domain;
+package com.exam.pcb.domain;
 
 public interface LayoutRule {
     String getType();

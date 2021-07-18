@@ -1,6 +1,6 @@
-package com.exam.ddd.repository;
+package com.exam.pcb.repository;
 
-import com.exam.ddd.domain.Net;
+import com.exam.pcb.domain.Net;
 
 public interface NetRepository {
     Net findById(Long id);

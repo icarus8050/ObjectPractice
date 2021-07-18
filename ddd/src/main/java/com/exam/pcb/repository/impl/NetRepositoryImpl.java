@@ -1,7 +1,7 @@
-package com.exam.ddd.repository.impl;
+package com.exam.pcb.repository.impl;
 
-import com.exam.ddd.domain.Net;
-import com.exam.ddd.repository.NetRepository;
+import com.exam.pcb.domain.Net;
+import com.exam.pcb.repository.NetRepository;
 
 import java.util.HashMap;
 import java.util.Map;

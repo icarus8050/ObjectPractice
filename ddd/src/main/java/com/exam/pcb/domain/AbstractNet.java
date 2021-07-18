@@ -1,4 +1,4 @@
-package com.exam.ddd.domain;
+package com.exam.pcb.domain;
 
 import java.util.HashSet;
 import java.util.Set;

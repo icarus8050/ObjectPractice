@@ -1,8 +1,8 @@
-package com.exam.ddd.domain;
+package com.exam.pcb.domain;
 
 import org.junit.jupiter.api.Test;
 
-import static com.exam.ddd.domain.NetRuleType.*;
+import static com.exam.pcb.domain.NetRuleType.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 class BusTest {
